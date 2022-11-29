@@ -57,17 +57,17 @@
 При открытии приложения пользователю предстоит увидеть базовое окно, в котором будут предоставлены премьеры кинематографа(в виде иконок).
 <p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%BA%D0%BD%D0%BE.PNG"></p>
 При нажатии на иконку определенного фильма откроется окно описания этой картины.
-<p><img src = "https://github.com/DurkoAnton/TRiTPO_Project/blob/master/Mockups/Окно%20описания%20произведения.PNG"></p>
+<p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%9E%D0%BA%D0%BD%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F.PNG"></p>
 Также в данном окне можно добавлять произведения в личный каталог и отмечать их как просмотренные с помощью специальных символов (только для зарегистрированных пользователей).</br>
 Для создания личного каталога пользователя необходимо авторизоваться в системе с помощью электронной почты и пароля.
 Пользователи, авторизованные в системе, могут добавлять произведения в личный каталог, а также отмечать их как просмотренные. Личный каталог пользователя выглядит следующим образом.
-<p><img src = "https://github.com/DurkoAnton/TRiTPO_Project/blob/master/Mockups/Окно%20личного%20каталога.PNG"></p>
+<p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%9E%D0%BA%D0%BD%D0%BE%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0.PNG"></p>
 Для входа уже зарегистрированных пользователей вход в систему можно произвести с помощью следующего окна.
-<p><img src = "https://github.com/DurkoAnton/TRiTPO_Project/blob/master/Mockups/Окно%20входа%20в%20систему.PNG"></p>
+<p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%9E%D0%BA%D0%BD%D0%BE%20%D0%B2%D1%85%D0%BE%D0%B4%D0%B0%20%D0%B2%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83.PNG"></p>
 Для регистрации пользователям будет предложено следующее окно.
-<p><img src = "https://github.com/DurkoAnton/TRiTPO_Project/blob/master/Mockups/Окно%20регистрации%20в%20системе.PNG"></p>
+<p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%9E%D0%BA%D0%BD%D0%BE%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8%20%D0%B2%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5.PNG"></p>
 Также в случае,если пользователь забыл свой пароль, может его напомнить с помощью следующего окна, используя электронную почту.
-<p><img src = "https://github.com/DurkoAnton/TRiTPO_Project/blob/master/Mockups/Окон%20напоминания%20пароля.PNG"></p>
+<p><img src = "https://github.com/Kalosha228/TRiTPO/blob/main/Mockups/%D0%9E%D0%BA%D0%BE%D0%BD%20%D0%BD%D0%B0%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8F.PNG"></p>
 
 <a name="Характеристики-пользователей"></a>
 ## 2.3 Характеристики пользователей
