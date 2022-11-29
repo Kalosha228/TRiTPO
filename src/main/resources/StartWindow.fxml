@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<AnchorPane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartWindowController">
+   <children>
+      <AnchorPane fx:id="showFilmPane" prefHeight="600.0" prefWidth="1260.0" visible="false">
+         <children>
+             <Label fx:id="genreLabel" layoutX="563.0" layoutY="168.0" prefHeight="17.0" prefWidth="381.0" text="" >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+
+             <Label fx:id="idLabel" layoutX="520.0" layoutY="146.0" prefHeight="17.0" prefWidth="70.0" >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+
+             <ImageView fx:id="imageViewForHandle" fitHeight="400.0" fitWidth="285.0" layoutX="185.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+             <Label fx:id="movieLengthLabel" layoutX="690.0" layoutY="220.0" prefHeight="17.0" prefWidth="369.0" text=""  >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="premierDataLabel" layoutX="603.0" layoutY="249.0" prefHeight="17.0" prefWidth="420.0" text=""  >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="nameLabel" layoutX="582.0" layoutY="122.0" prefHeight="17.0" prefWidth="412.0" text=""  >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="ageRatingLabel" layoutX="588.0" layoutY="274.0" prefHeight="17.0" prefWidth="450.0" text=""   >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="countriesLabel" layoutX="580.0" layoutY="193.0" prefHeight="5.0" prefWidth="503.0" text="" >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="sloganLabel" layoutX="657.0" layoutY="326.0" prefHeight="18.0" prefWidth="143.0" text=""  >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="582.0" layoutY="388.0" prefHeight="191.0" prefWidth="487.0" text="" textAlignment="JUSTIFY" wrapText="true"  >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="budgetLabel" layoutX="656.0" layoutY="353.0" prefHeight="18.0" prefWidth="444.0" text="" >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Label fx:id="companiesLabels" layoutX="665.0" layoutY="301.0" prefHeight="18.0" prefWidth="269.0" text="" >
+                 <font>
+                     <Font name="Century Gothic" size="14.0" /></font>
+             </Label>
+             <Button fx:id="addMovieButton" layoutX="855.0" layoutY="198.0" mnemonicParsing="false" onAction="#addMovieInUserCatalog" prefHeight="45.0" prefWidth="218.0" text="Добавить фильм в каталог">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Button>
+             <Label layoutX="503.0" layoutY="145.0" text="Id:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Button fx:id="deleteMovieButton" layoutX="856.0" layoutY="135.0" mnemonicParsing="false" onAction="#deleteMovieFromUserCatalog" prefHeight="45.0" prefWidth="218.0" text="Удалить фильм из каталога">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Button>
+             <Label fx:id="genreLabel1" layoutX="504.0" layoutY="167.0" prefHeight="17.0" prefWidth="381.0" text="Жанры:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="movieLengthLabel1" layoutX="504.0" layoutY="220.0" prefHeight="17.0" prefWidth="462.0" text="Продолжительность, мин:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="premierDataLabel1" layoutX="504.0" layoutY="248.0" prefHeight="10.0" prefWidth="517.0" text="Дата релиза:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="nameLabel1" layoutX="504.0" layoutY="120.0" prefHeight="17.0" prefWidth="412.0" text="Название:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="ageRatingLabel1" layoutX="505.0" layoutY="327.0" prefHeight="17.0" prefWidth="469.0" text="TMDb популярность:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="countriesLabel1" layoutX="505.0" layoutY="300.0" prefHeight="17.0" prefWidth="487.0" text="Компании-создатели">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="sloganLabel1" layoutX="505.0" layoutY="273.0" prefHeight="17.0" prefWidth="469.0" text="Состояние:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="budgetLabel1" layoutX="503.0" layoutY="193.0" prefHeight="17.0" prefWidth="469.0" text="Бюджет, $:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <Label fx:id="seriesInfoLabel1" layoutX="505.0" layoutY="356.0" prefHeight="17.0" prefWidth="381.0" text="Страны-создатели:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+
+             <Label layoutX="504.0" layoutY="386.0" prefHeight="17.0" prefWidth="381.0" text="Описание:">
+                 <font>
+                     <Font name="Century Gothic Bold" size="14.0" />
+                 </font></Label>
+             <FlowPane fx:id="flowPaneForCadres" layoutX="45.0" layoutY="507.0" orientation="VERTICAL" prefHeight="206.0" prefWidth="960.0" />
+             <CheckBox fx:id="watchedStatusCheckBox" layoutX="857.0" layoutY="266.0" mnemonicParsing="false" onAction="#markMovieAsWatched" text="Просмотрен">
+                 <font>
+                     <Font name="Century Gothic" size="15.0" />
+                 </font></CheckBox>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="2.0" layoutY="42.0" prefHeight="360.0" prefWidth="126.0" spacing="10">
+         <children>
+             <Label text="Жанры">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Label>
+            <ChoiceBox fx:id="genreIdsBox" prefHeight="25.0" prefWidth="126.0" value="--" >
+             <items>
+                 <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="--" />
+                     <String fx:value="Триллер" />
+                     <String fx:value="Аниме" />
+                     <String fx:value="Фантастика" />
+                     <String fx:value="Боевик" />
+                     <String fx:value="Приключения" />
+                     <String fx:value="Мультфильм" />
+                     <String fx:value="Комедия" />
+                     <String fx:value="Криминал" />
+                     <String fx:value="Документальный" />
+                     <String fx:value="Драма" />
+                     <String fx:value="Семейный" />
+                     <String fx:value="Фэнтези" />
+                     <String fx:value="История" />
+                     <String fx:value="Ужасы" />
+                     <String fx:value="Детектив" />
+                 </FXCollections>
+             </items>
+            </ChoiceBox>
+             <Label text="Рейтинг min">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Label>
+             <TextField fx:id="ratingFrom" prefHeight="25.0" prefWidth="83.0">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></TextField>
+             <Label text="Рейтинг max">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Label>
+             <TextField fx:id="ratingTo">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></TextField>
+             <Label text="Год релиза min">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Label>
+             <TextField fx:id="yearFrom">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></TextField>
+             <Label text="Год релиза max">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></Label>
+             <TextField fx:id="yearTo">
+                 <font>
+                     <Font name="Century Gothic" size="14.0" />
+                 </font></TextField>
+         </children>
+      </VBox>
+       <TextField fx:id="searchindString" layoutX="149.0" layoutY="14.0" prefHeight="36.0" prefWidth="560.0">
+           <font>
+               <Font name="Century Gothic" size="14.0" />
+           </font>
+       </TextField>
+      <ScrollPane fx:id="scroll" layoutX="138.0" layoutY="86.0" prefHeight="515.0" prefWidth="960.0" visible="false">
+         <content>
+            <FlowPane fx:id="flowPaneForShowListMovies" prefHeight="515.0" prefWidth="960.0" visible="false" />
+         </content>
+      </ScrollPane>
+       <ScrollPane fx:id="scroll3" layoutX="138.0" layoutY="86.0" prefHeight="515.0" prefWidth="1126.0" visible="false">
+           <content>
+               <FlowPane fx:id="flowPaneForShowRecomendationsMovies" prefHeight="515.0" prefWidth="1118.0" visible="false" />
+           </content>
+       </ScrollPane>
+       <ScrollPane fx:id="scroll4" layoutX="138.0" layoutY="86.0" prefHeight="515.0" prefWidth="1126.0" visible="false">
+           <content>
+               <FlowPane fx:id="flowPaneForShowWatchedMovies" prefHeight="515.0" prefWidth="1118.0" visible="false" />
+           </content>
+       </ScrollPane>
+       <Button fx:id="returnToBackButton" layoutX="70.0" visible="false" layoutY="14.0" mnemonicParsing="false" onAction="#returnBackScene" prefHeight="37.0" prefWidth="70.0" text="Назад">
+           <font>
+               <Font name="Century Gothic" size="15.0" />
+           </font></Button>
+       <Button layoutX="713.0" layoutY="14.0" mnemonicParsing="false" onAction="#doSearchMovies" prefHeight="36.0" prefWidth="84.0" text="Поиск">
+           <font>
+               <Font name="Century Gothic" size="17.0" />
+           </font>
+       </Button>
+       <Button fx:id="showCatalogWindow" disable="false" layoutX="985.0" layoutY="14.0" mnemonicParsing="false" onAction="#showCatalog" text="Каталог пользователя">
+           <font>
+               <Font size="16.0" />
+           </font>
+       </Button>
+       <Button fx:id="authorizeInSystemButton" layoutX="820.0" layoutY="14.0" mnemonicParsing="false" onAction="#doAutorize" prefHeight="36.0" prefWidth="143.0" text="Авторизация">
+           <font>
+               <Font name="Century Gothic" size="16.0" />
+           </font>
+       </Button>
+       <VBox fx:id="boxInformationAboutCatalog" alignment="TOP_CENTER" layoutX="1095.0" layoutY="124.0" prefHeight="221.0" prefWidth="187.0" spacing="15.0" visible="false">
+           <children>
+               <Label fx:id="countMoviesInUserCatalog" text="Фильмов:">
+                   <font>
+                       <Font name="Century Gothic" size="14.0" />
+                   </font></Label>
+               <Label fx:id="countWatchedMovies" text="Просмотрено:">
+                   <font>
+                       <Font name="Century Gothic" size="14.0" />
+                   </font></Label>
+               <Button mnemonicParsing="false" onAction="#getRecomendaitions" prefHeight="55.0" prefWidth="169.0" text="Получить рекомендации">
+                   <font>
+                       <Font name="Century Gothic" size="12.0" />
+                   </font></Button>
+               <Button mnemonicParsing="false" onAction="#showWatchedMoviesFromCatalog" prefHeight="51.0" prefWidth="172.0" text="Просмотренные фильмы">
+                   <font>
+                       <Font name="Century Gothic" size="12.0" />
+                   </font></Button>
+           </children>
+       </VBox>
+   </children>
+</AnchorPane>

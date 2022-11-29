@@ -1,0 +1,231 @@
+FORMAT: 1A
+HOST: http://api.kinopoisk.cf/
+
+# API КиноПоиск
+
+<img src="http://kinopoisk.cf/logo.png" />
+**Открытое API сайта <br> kinopoisk.ru**
+
+
+<blockquote>
+<b>Нравится API?</b> Это ведь гораздо удобнее, чем парсить странички кинопоиска, а после обновления крыть всех благим матом. <br />
+<b>Поддержи проект</b> свободным рублем, помоги с арендой серверов.<br /><br />
+<i>[QIWI]</i> +995 593 98 71 16<br />
+<i>[WMR]</i> R391259577141<br />
+<i>[WMZ]</i> Z299703723757<br />
+<i>[Я.ДЕНЬГИ]</i> 410011394088277
+</blockquote>
+
+---
+
+<a href="https://vk.com/kinopoisk_api">
+<img src="https://vk.com/images/safari_60.png" />За обновлениями<br /> следите в группе ВК </a>
+
+<br />
+
+---
+
+<blockquote>
+У всех коллекций есть аргумент page, обозначающий номер страницы.<br />
+Стандартное значение - 1
+
+Есть возможность указывать дату для методов вроде "getTodayFilms", передавая параметр date.<br/>
+</blockquote>
+
+## Получить фильм [/getFilm?filmID=714888]
+<blockquote>[GET] /getFilm?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+## Кадры фильма [/getGallery?filmID=714888]
+<blockquote>[GET] /getGallery?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+## Режисеры, актеры, операторы [/getStaff?filmID=714888]
+<blockquote>[GET] /getStaff?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+
+## Похожие фильмы [/getSimilar?filmID=714888]
+<blockquote>[GET] /getSimilar?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+<br /><br />
+
+----
+
+## Список жанров [/getGenres]
+<blockquote>[GET] /getGenres</blockquote>
+### Выполнить [GET]
+
+## ТОП жанров [/getTopGenre]
+<blockquote>[GET] /getTopGenre</blockquote>
+*АРГУМЕНТЫ НЕИЗВЕСТНЫ, ПОВЕДЕНИЕ НЕ ПРОВЕРЕНО*
+### Выполнить [GET]
+
+## Список отзывов [/getReviews?filmID=714888]
+<blockquote>[GET] /getReviews?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+## Полный отзыв [/getReviewDetail?reviewID=2341463]
+<blockquote>[GET] /getReviewDetail?reviewID={reviewID}</blockquote>
++ Параметры
+    + reviewID (int) - ID отзыва из метода getReviews
+    
+### Выполнить [GET]
+
+## Информация о пользователе [/getPeopleDetail]
+<blockquote>[GET] /getPeopleDetail</blockquote>
+*АРГУМЕНТЫ НЕИЗВЕСТНЫ, ПОВЕДЕНИЕ НЕ ПРОВЕРЕНО*
+### Выполнить [GET]
+
+<br /><br />
+
+----
+
+## Фильмы в прокате [/getTodayFilms]
+<blockquote>[GET] /getTodayFilms</blockquote>
+
+ + Параметры
+    + genreID (int) - ID жанра
+
+### Выполнить [GET]
+
+## Список кинотеатров [/getCinemas]
+<blockquote>[GET] /getCinemas</blockquote>
+### Выполнить [GET]
+
+## Информация о кинотеатре [/getCinemaDetail?cinemaID=263364]
+<blockquote>[GET] /getCinemaDetail?cinemaID={cinemaID}</blockquote>
+ + Параметры
+    + cinemaID (int) - ID кинотеатра из метода getCinemas
+    
+       
+### Выполнить [GET]
+
+## Сеансы на фильм [/getSeance?filmID=714888]
+<blockquote>[GET] /getSeance?filmID={filmID}</blockquote>
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+## Даты показа фильма [/getDatesForSeance?filmID=714888]
+
++ Параметры
+    + filmID (int) - ID фильма на КиноПоиск
+    
+### Выполнить [GET]
+
+## Даты сеансов кинотеатра [/getDatesForDetailCinema?cinemaID=263364]
+<blockquote>[GET] /getDatesForDetailCinema?filmID={filmID}</blockquote>
++ Параметры
+    + cinemaID (int) - ID кинотеатра из метода getCinemas
+    
+### Выполнить [GET]
+
+## Скоро в прокате [/getSoonFilms]
+<blockquote>[GET] /getSoonFilms</blockquote>
+### Выполнить [GET]
+
+## Скоро на DVD [/getSoonDVD]
+<blockquote>[GET] /getSoonDVD</blockquote>
+
++ Параметры
+    + type (str) - dvd или blu (DVD и Blu-Ray соответственно)
+
+### Выполнить [GET]
+
+## Даты выхода фильмов в прокат [/getDatesForSoonFilms]
+<blockquote>[GET] /getDatesForSoonFilms</blockquote>
+*АРГУМЕНТЫ НЕИЗВЕСТНЫ, ПОВЕДЕНИЕ НЕ ПРОВЕРЕНО*
+### Выполнить [GET]
+
+## Даты выхода фильмов на DVD [/getDatesForSoonDVD]
+<blockquote>[GET] /getDatesForSoonDVD</blockquote>
+*АРГУМЕНТЫ НЕИЗВЕСТНЫ, ПОВЕДЕНИЕ НЕ ПРОВЕРЕНО*
+### Выполнить [GET]
+
+
+<br /><br />
+
+----
+
+## ТОП Фильмов [/getTop]
+<blockquote>[GET] /getTop</blockquote>
+### Выполнить [GET]
+
+## Лучшие фильмы [/getBestFilms]
+<blockquote>[GET] /getBestFilms</blockquote>
+
++ Параметры
+    + listID (int) - ID каталога
+
+### Выполнить [GET]
+
+
+## Глобальный поиск [/searchGlobal?keyword=%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5]
+<blockquote>[GET] /searchGlobal?keyword={keyword}</blockquote>
++ Параметры
+    + keyword (string) - строка поиска
+    
+### Выполнить [GET]
+
+
+## Поиск фильмов [/searchFilms?keyword=%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5]
+<blockquote>[GET] /searchFilms?keyword={keyword}</blockquote>
++ Параметры
+    + keyword (string) - строка поиска
+    
+### Выполнить [GET]
+
+## Поиск людей [/searchPeople?keyword=%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5]
+<blockquote>[GET] /searchFilms?keyword={keyword}</blockquote>
++ Параметры
+    + keyword (string) - строка поиска
+    
+### Выполнить [GET]
+
+## Поиск кинотеатров [/searchCinemas?keyword=%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5]
+<blockquote>[GET] /searchCinemas?keyword={keyword}</blockquote>
++ Параметры
+    + keyword (string) - строка поиска
+    
+### Выполнить [GET]
+
+<br /><br />
+
+----
+
+## Новости [/getNews]
+<blockquote>[GET] /getNews</blockquote>
++ Параметры
+    + filmID (int, не обязательно) - ID фильма на КиноПоиске
+    
+### Выполнить [GET]
+
+
+## Полная новость [/getNewsDetail]
+<blockquote>[GET] /getNewsDetail</blockquote>
+*АРГУМЕНТЫ НЕИЗВЕСТНЫ, ПОВЕДЕНИЕ НЕ ПРОВЕРЕНО*
+### Выполнить [GET]
+
+
+
+---
+# Нашли баг?
+Сообщите по почте wielski@bk.ru с пометкой KinoPoisk

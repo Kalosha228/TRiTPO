@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group '13'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+allprojects {
+    repositories {
+//     <artifactId>jersey-client</artifactId>
+//     <version>2.8</version>
+        //       <id></id>
+        //    <url>https://www.jitpack.io</url>
+     //   id  jitpack.io
+
+
+            maven { url 'https://www.jitpack.io' }
+
+    }
+}
+// <dependency>
+//     <groupId>org.glassfish.jersey.core</groupId>
+//     <artifactId>jersey-client</artifactId>
+//     <version>2.8</version>
+// </dependency>
+// <dependency>
+//     <groupId>org.glassfish.jersey.media</groupId>
+//     <artifactId>jersey-media-json-jackson</artifactId>
+//     <version>2.8</version>
+// </dependency>
+dependencies {
+   // compile 'javax.mail:mail:1.4.7'
+    implementation 'com.uwetrottmann.tmdb2:tmdb-java:2.2.0'
+    compile 'com.vliolios:themoviedb-java-kit:0.1.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.github.TrueDevProfile:kinopoisk-api:0.2.0'
+}
